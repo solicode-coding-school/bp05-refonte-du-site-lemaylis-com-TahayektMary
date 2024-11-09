@@ -438,7 +438,7 @@ footer {
     align-items: center;  /* Centre verticalement l'image du logo */
 }
 .footer-logo .logo-img {
-    max-width: 100px;  /* Limite la largeur du logo à 100px */
+    max-width: 200px;  /* Limite la largeur du logo à 100px */
     height: auto;  /* Garde les proportions de l'image */
 }
 .footer-text {
