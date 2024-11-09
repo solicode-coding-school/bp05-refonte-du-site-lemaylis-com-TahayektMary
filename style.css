@@ -1,0 +1,468 @@
+ /* Styles généraux */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b302c;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1b302c;
+    position: relative;
+}
+/* Logo centré */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo img {
+    height: 80px;
+}
+.menu-button, .reserve-button {
+    display: flex;
+    align-items: center; /* Centre verticalement l'icône et le texte */
+    gap: 8px; /* Espace entre l'icône et le texte */
+    background-color: #d4b89a; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Coins arrondis */
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase; /* Met le texte en majuscules */
+    font-family: Arial, sans-serif; /* Police similaire à l'image */
+    font-size: 16px; /* Taille du texte */
+    
+}
+/* Icône de calendrier pour le bouton de réservation */
+.menu-button {
+background-color: transparent;
+}
+/* Icône de menu */
+.menu-icon {
+    width: 20px; /* Ajustez la taille selon vos besoins */
+    height: 50px;
+}
+.calendar-icon {
+    width: 18px; /* Ajustez la taille selon vos besoins */
+    height: 18px;
+}
+/* Conteneur de l'option de langue et du bouton de réservation */
+.language-reservation-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre les éléments */
+}
+.language {
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    font-weight: bold;
+    padding: 5px 10px; /* Espacement interne */
+    border-radius: 5px;
+    transition: color 0.8s, background-color 0.8s;
+}
+.language:hover {
+    color: #fff;
+    background-color: #d4b89a; /* Couleur de fond au survol */
+}
+/* Bannière */
+/* Bannière */
+.banner {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
+    gap: 20px;
+    padding: 25px;
+    color: #ffffff;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+ 
+}
+.form1-group {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes */
+    justify-content: space-between; /* Pour un meilleur alignement */
+    background-color: transparent;
+    border-radius: 12px;
+    width: 100%;
+}
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+    border-radius: 8px; /* Arrondir les bords des éléments du formulaire */
+}
+.form-group label {
+    margin-bottom: 8px;
+    color: #ffffff; /* Couleur du texte des labels */
+    font-size: 1rem;
+}
+.form-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; /* Fond légèrement grisé pour les champs de saisie */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+    border-color: #1b302c;
+    outline: none;
+    background-color: #ffffff; /* Fond blanc au focus pour les champs de saisie */
+}
+button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 20px;
+    font-size: 1rem;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #145a46; /* Changer la couleur de fond du bouton au survol */
+}
+/* Introduction */
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #234441;
+    color: #ffffff;
+}
+.intro-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.intro-text {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+}
+.intro-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.intro-text p {
+    margin-bottom: 15px;
+}
+.discover-button {
+    padding: 10px 20px;
+    background-color: #d4b89a;
+    border: none;
+    color: #1b302c;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+/* Section Services */
+/* Style commun aux sections */
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+/* Section Services */
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-item {
+    position: relative;
+    flex: 1;
+    height: 300px;  /* Définir une hauteur commune pour chaque image */
+    overflow: hidden; /* Cache la partie de l'image qui dépasse */
+}
+.service-item img {
+    width: 100%;
+    height: 100%;  /* Assure que l'image remplit la hauteur du conteneur */
+    object-fit: cover;  /* Remplit l'espace tout en conservant l'aspect de l'image */
+    transition: opacity 0.3s ease;
+}
+/* Texte dans les services */
+.service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent */
+    color: transparent; /* Texte caché au départ */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0; /* Le texte est caché au départ */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+/* Affichage du texte lors du hover */
+.service-item:hover img {
+    opacity: 0.4; /* Réduit l'opacité de l'image */
+}
+.service-item:hover .service-text {
+    opacity: 1; /* Affiche le texte */
+    color: white; /* Le texte devient blanc */
+}
+/* Ajustement de la taille de la police pour les titres */
+.service-text h3 {
+    font-size: 1.5rem; /* Réduit la taille de la police pour qu'elle soit similaire à celle des activités */
+    margin-bottom: 10px;
+}
+.service-text p {
+    font-size: 1rem; /* Réduit la taille de la police pour qu'elle soit similaire à celle des activités */
+    line-height: 1.6;
+}
+/* Section Activités */
+.activities-container {
+    position: relative;
+    height: 300px;  /* Hauteur fixe pour l'image des activités */
+    overflow: hidden; /* Cache la partie de l'image qui dépasse */
+}
+.activities-image {
+    width: 100%;
+    height: 100%;  /* Assure que l'image remplit la hauteur du conteneur */
+    object-fit: cover;  /* Remplit l'espace tout en conservant l'aspect de l'image */
+    transition: opacity 0.3s ease;
+}
+/* Texte dans la section Activités */
+.activities-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent */
+    color: transparent; /* Texte caché au départ */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0; /* Le texte est caché au départ */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+/* Affichage du texte lors du hover */
+.activities-container:hover .activities-image {
+    opacity: 0.4; /* Réduit l'opacité de l'image */
+}
+.activities-container:hover .activities-text {
+    opacity: 1; /* Affiche le texte */
+    color: white; /* Le texte devient blanc */
+}
+.activities-text h2 {
+    font-size: 1.5rem; /* Taille de police pour correspondre à celle des autres sections */
+    margin-bottom: 10px;
+}
+.activities-text p {
+    font-size: 1rem; /* Taille de police similaire */
+    line-height: 1.6;
+}
+/* Section Tarifs */
+.tarifs {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre le contenu */
+}
+.tarifs-header {
+    font-size: 2.5rem; /* Taille du titre Tarifs */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px; /* Espace en dessous du titre */
+    color: #1b302c;  /* Couleur du texte */
+}
+/* Conteneur pour les éléments tarifaires */
+.tarif-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les deux éléments */
+    width: 100%;  /* Prend toute la largeur de la section */
+    max-width: 1200px; /* Limite la largeur totale */
+}
+/* Mise en page des tarifs */
+.tarif-item {
+    position: relative;
+    width: 48%;  /* Réduit la largeur de chaque élément pour les mettre côte à côte */
+    overflow: hidden; /* Cache la partie de l'image qui dépasse */
+    height: 300px;  /* Hauteur fixe pour chaque élément */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligne le texte en bas */
+    border-radius: 10px;  /* Ajoute des coins arrondis aux éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre autour des éléments */
+}
+.tarif-item img {
+    width: 100%;
+    height: 100%;  /* Assure que l'image remplit la hauteur du conteneur */
+    object-fit: cover;  /* Remplir l'espace tout en conservant l'aspect de l'image */
+    transition: opacity 0.3s ease;
+}
+/* Texte dans chaque tarif */
+.tarif-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent */
+    color: transparent; /* Texte caché au départ */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0; /* Le texte est caché au départ */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+/* Effet hover sur les éléments tarifaires */
+.tarif-item:hover img {
+    opacity: 0.4; /* Réduit l'opacité de l'image au survol */
+}
+.tarif-item:hover .tarif-text {
+    opacity: 1; /* Affiche le texte lors du survol */
+    color: white; /* Le texte devient blanc */
+}
+/* Ajustement de la taille de la police pour les titres */
+.tarif-text h3 {
+    font-size: 1.5rem; /* Taille de la police pour le titre */
+    margin-bottom: 10px;
+}
+.tarif-text p {
+    font-size: 1rem; /* Taille de la police pour le texte */
+    line-height: 1.6;
+}
+/* Section de localisation */
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.image-container {
+    position: relative;  /* Nécessaire pour positionner le texte par-dessus l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.localisation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;  /* Ajout d'une transition pour l'opacité */
+}
+.image-container:hover .localisation img {
+    transform: scale(1.05);  /* Agrandissement léger lors du hover */
+    opacity: 0.4;  /* Réduction de l'opacité de l'image à 40% lors du hover */
+}
+.location-text {
+    position: absolute;  /* Positionner le texte par-dessus l'image */
+    top: 50%;  /* Centrer le texte verticalement */
+    left: 50%;  /* Centrer le texte horizontalement */
+    transform: translate(-50%, -50%);  /* Ajuster le centrage */
+    background-color: rgba(0, 0, 0, 0.6);  /* Fond semi-transparent pour améliorer la lisibilité */
+    color: transparent;  /* Masquer le texte par défaut */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;  /* Masquer le texte par défaut */
+    transition: opacity 0.3s ease, color 0.3s ease;  /* Transition pour l'apparition du texte et changement de couleur */
+}
+.image-container:hover .location-text {
+    opacity: 1;  /* Affiche le texte lors du survol */
+    color: white;  /* Change la couleur du texte en blanc lors du hover */
+}
+.location-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.location-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+/* Footer */
+footer {
+    padding: 20px;  /* Hauteur du footer */
+    background-color: #d4b89a;  /* Couleur de fond du footer */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;  /* Centre horizontalement tout le contenu */
+    align-items: center;  /* Centre verticalement les éléments */
+    height: auto;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;  /* Centre le logo et le texte horizontalement */
+    align-items: center;  /* Aligne les éléments verticalement au centre */
+    gap: 30px;  /* Ajoute un espace entre le logo et le texte */
+}
+.footer-logo {
+    display: flex;
+    align-items: center;  /* Centre verticalement l'image du logo */
+}
+.footer-logo .logo-img {
+    max-width: 100px;  /* Limite la largeur du logo à 100px */
+    height: auto;  /* Garde les proportions de l'image */
+}
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Aligne le texte à gauche à l'intérieur du conteneur */
+    gap: 10px;
+    text-align: left;  /* Aligne le texte à gauche */
+}
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 1.2rem;  /* Augmente la taille du texte pour les informations de contact */
+}
+.footer-social {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;  /* Aligne les icônes sociales à gauche */
+}
+.footer-social a {
+    color: #1b302c;  /* Couleur des liens */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;  /* Augmente la taille des liens sociaux */
+}
+.footer-social a:hover {
+    text-decoration: underline;
+}
